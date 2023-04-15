@@ -130,6 +130,7 @@ nav a:hover {
 }
 
 /* Contact section */
+
 #contact {
   background-color: #fff;
   padding: 100px 20px;
@@ -149,4 +150,95 @@ nav a:hover {
 
 #contact label {
   font-size: 18px;
-  margin-top
+  margin-top: 10px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+#contact textarea {
+  height: 150px;
+}
+
+#contact input[type="submit"] {
+  background-color: #FFC107;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+  border: none;
+  margin-bottom: 20px;
+}
+
+#contact input[type="submit"]:hover {
+  background-color: #FF9800;
+}
+
+@media screen and (max-width: 768px) {
+
+  /* Hero section */
+  #hero h1 {
+    font-size: 36px;
+  }
+
+  #hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+
+  /* Services section */
+  #services li {
+    flex-basis: calc(50% - 20px);
+  }
+
+  /* Gallery section */
+  .card {
+    flex-basis: calc(50% - 40px);
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  /* Hero section */
+  #hero h1 {
+    font-size: 24px;
+  }
+
+  #hero p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 6px 16px;
+  }
+
+  /* Services section */
+  #services li {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  /* Gallery section */
+  .card {
+    flex-basis: 100%;
+  }
+
+}
